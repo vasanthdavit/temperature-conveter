@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OASIS | Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <label for="temperature">Temperature:</label>
+    <input type="number" id="temperature" placeholder="Enter temperature" required>
+    <label for="convertFrom">Convert from:</label>
+    <select id="convertFrom">
+      <option value="Celsius">Celsius</option>
+      <option value="Fahrenheit">Fahrenheit</option>
+      <option value="Kelvin">Kelvin</option>
+    </select>
+    <label for="convertTo">Convert to:</label>
+    <select id="convertTo">
+      <option value="Celsius">Celsius</option>
+      <option value="Fahrenheit">Fahrenheit</option>
+      <option value="Kelvin">Kelvin</option>
+    </select>
+    <button onclick="convertTemperature()">Convert</button>
+    <div class="result" id="result"></div>
+  </div>
+  <footer>
+    &copy; Copyright VASANTH  Inc., All Rights Reserved.
+  </footer>
+<!-- script tag -->
+  <script src="script.js"></script>
+</body>
+</html>
